@@ -50,7 +50,7 @@ p{
 .btn-red{
     background: red;
     position: absolute;
-    top: 80px;
+    top: 100px;
     z-index: 1;
 }
 .btn-green{
@@ -61,4 +61,5 @@ body{
     background-image: url(download.jpeg);
     background-size: cover;
 }
+
 
