@@ -22,6 +22,23 @@
     let scale = 1;
 
     btnRed.addEventListener('click', () => {
+        // Move "Não" button to a random position within .button-area
+        const area = document.querySelector('.button-area');
+        const areaRect = area.getBoundingClientRect();
+        const btnRect = btnRed.getBoundingClientRect();
+
+        // Calculate max top/left so button stays inside area
+        const maxTop = area.offsetHeight - btnRed.offsetHeight;
+        const maxLeft = area.offsetWidth - btnRed.offsetWidth;
+
+        // Generate random position
+        const top = Math.random() * maxTop;
+        const left = Math.random() * maxLeft;
+
+        btnRed.style.top = `${top}px`;
+        btnRed.style.left = `${left}px`;
+
+        // Grow "Sim" button as before
         scale += 0.2; 
         btnGreen.style.transform = `scale(${scale})`;
     });
