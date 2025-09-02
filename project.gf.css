@@ -14,6 +14,7 @@ p{
     gap: 30px;
     margin: 40px 0;
     flex-wrap: wrap;
+    position: relative;
 }
 @media (max-width: 600px){
     h1{
@@ -48,6 +49,7 @@ p{
 }
 .btn-red{
     background: red;
+    position: absolute;
 }
 .btn-green{
     background: greenyellow;
