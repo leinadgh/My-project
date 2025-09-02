@@ -12,8 +12,29 @@ p{
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin: 500px;
+    margin: 40px 0;
+    flex-wrap: wrap;
 }
+@media (max-width: 600px){
+    h1{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .button-area{
+        gap: 15px;
+        margin: 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-area button {
+        font-size: 18px;
+        padding: 12px 20px;
+        width: 80vw;
+        max-width: 300px;
+    }
+    
+}
+
 .button-area button {
     font-size: 20px;
     padding: 10px 24px;
