@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date me</title>
+    <link rel="stylesheet" href="project.gf.css">
+</head>
+<body id="link-container">
+
+    <h1>Aceita namorar comigo?</h1>
+
+    <div class="button-area">
+    <button class="btn-green">Sim</button>
+    <button class="btn-red">Não</button>
+
+</div>
+
+<script>
+    const btnGreen = document.querySelector('.btn-green');
+    const btnRed = document.querySelector('.btn-red');
+    let scale = 1;
+
+    btnRed.addEventListener('click', () => {
+        scale += 0.2; 
+        btnGreen.style.transform = `scale(${scale})`;
+    });
+
+    btnGreen.addEventListener('click', () => {
+        window.open('https://www.instagram.com/moloquel/?next=%2Fmoloquel%2F', '_blank');
+    });
+</script>
+
+</body>
+</html>
