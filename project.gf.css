@@ -50,11 +50,15 @@ p{
 .btn-red{
     background: red;
     position: absolute;
+    top: 80px;
+    z-index: 1;
 }
 .btn-green{
     background: greenyellow;
+    z-index: 2;
 }
 body{
     background-image: url(download.jpeg);
     background-size: cover;
 }
+
